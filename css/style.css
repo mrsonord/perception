@@ -1,0 +1,888 @@
+/** {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  background: #b4ddb4;
+  background: -moz-linear-gradient(top,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400));
+  background: -webkit-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  background: -o-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  background: -ms-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  background: linear-gradient(to bottom,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 );
+  background-repeat: no-repeat;
+}
+
+.wrap {
+    padding: 1em 2em;
+    width: 80em;
+    height: 60em;
+    margin : 0 auto;
+}
+
+header h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+ul.navbar {
+  top: -1em;
+  padding: 0.2em 0.4em;
+  width: 60%;
+  height: 3.5em;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+ul.navbar li {
+  display: inline-block;
+  border: 0.1em ridge black;
+  text-align: center;
+  width: 4em;
+  padding: 1em 1.5em;
+  margin: 0 3.7em;
+}
+
+.eyebox {
+  position: absolute;
+  height: 20em;
+  width: 18em;
+  top: 25%;
+  left: 40%;
+  border: 2px solid black;
+}*/
+
+/* BLUE EYE */
+
+/*
+body {
+  background: #000;
+}
+
+@keyframes rotating {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(0.1) rotateX(360deg);
+  }
+
+  to {
+    transform: scale(1) rotate(-900deg);
+  }
+}
+.drie {
+  background: rgba(255, 255, 99, 0.1);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  animation: rotating 2s linear infinite;
+}
+.drie:before, .drie:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 0px 1px 12px black;
+}
+.drie:before {
+  border-radius: 40%;
+  transform: rotate(60deg);
+  box-shadow: 0px 0px 100px 12px white;
+  background: rgba(173, 255, 255, 0.1);
+}
+.drie:after {
+  border-radius: 50%;
+  transform: rotate(-60deg);
+  background: rgba(244, 83, 255, 0.1);
+}
+
+.vier {
+  background: rgba(173, 255, 255, 0.1);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 100px 12px #444;
+  margin: -200px 0 0 -200px;
+  animation: vier 6.0s infinite;
+}
+
+@keyframes vier {
+  0% {
+    transform: rotateX(200deg) scale(0.5);
+  }
+
+  25% {
+    transform: scale(0.62);
+  }
+
+  50% {
+    transform: scale(0.4);
+  }
+
+  75% {
+    transform: scale(0.62);
+  }
+
+  100% {
+    transform: rotateX(200deg) scale(0.5);
+  }
+}
+.vijf {
+  background: rgba(173, 255, 255, 0.1);
+  background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 120px 1px black;
+  margin: -100px 0 0 -100px;
+  animation: vijf 3.0s infinite;
+}
+
+@keyframes vijf {
+  0% {
+    transform: rotateX(200deg) scale(0.5);
+  }
+
+  25% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(0.7);
+  }
+
+  75% {
+    transform: scale(0.4);
+  }
+
+  100% {
+    transform: rotateX(200deg) scale(0.5);
+  }
+}
+.zes {
+  background: url(http://trialx.com/curetalk/wp-content/blogs.dir/7/files/2011/05/diseases/Pupil-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  box-shadow: 0px 0px 50px 10px gray;
+  animation: zes 1.5s infinite;
+}
+
+@keyframes zes {
+  0% {
+    transform: rotateX(200deg) scale(0.5);
+  }
+
+  25% {
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  75% {
+    transform: scale(0.3);
+  }
+
+  100% {
+    transform: rotateX(200deg) scale(0.5);
+  }
+}
+*/
+
+/*
+{
+margin:0px;
+padding:0px;
+outline:none;
+}
+ 
+body{
+position:relative;
+background: #535454;
+padding:0px;
+margin:0px;
+}
+
+#eye
+{
+width:200px;
+height:200px;
+border-radius:50%;
+background:#ecf0f1;
+box-shadow:inset 0px 8px 0px #bdc3c7;
+position:relative;
+margin:10px auto;
+}
+
+#eye:before
+{
+content:"";
+width:125px;
+height:125px;
+background:#34495e;
+border-radius:50%;
+position:absolute;
+left: 38px;
+top: 40px;
+box-shadow:inset 5px -8px 0px #2980b9,inset 0px 0px 0px 35px #3498db;
+}
+
+#eye:after
+{
+content:"";
+width:35px;
+height:35px;
+background:#ffffff;
+border-radius:50%;
+position:absolute;
+left: 105px;
+top: 69px;
+}*/
+
+/*
+.eye {
+  position: relative;
+  top: 20%;
+  width: 16em;
+  height: 12em;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+.lid {
+  height: 40%;
+  width: 100%;
+  border-radius: 50%;
+  background: tan;
+}
+
+.iris {
+  position: relative;
+  bottom: 50%;
+  left: 40%;
+  width: 5em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: darkblue;
+}
+.pupil {
+  position: relative;
+  top: 35%;
+  left: 37%;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: black;
+}*/
+*
+{
+    margin: 0;
+}
+html, body
+{
+    height: 100%;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+
+    background: rgb(60, 60, 60);
+}
+#hal, #hal:before, #hal:after, #eye, #eye:before, #eye:after
+{
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    border-radius: 100%;
+}
+#hal:before, #hal:after, #eye:before, #eye:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+}
+#hal
+{
+    position: relative;
+
+    width: 325px;
+    height: 325px;
+    margin: 2em auto;
+
+    transition: height .15s ease, width .15s ease;
+
+    border: .15em solid rgba(0, 0, 0, .28);
+    box-shadow: 0 0 1em rgba(0, 0, 0, .2), 0 .5em .5em rgba(0, 0, 0, .2);
+}
+#hal:before
+{
+    z-index: 1;
+
+    background: -webkit-linear-gradient(top, rgb(201, 208, 219) 0%, rgb(182, 187, 196) 35%, rgb(161, 165, 173) 50%, rgb(127, 130, 135) 100%);
+    background:         linear-gradient(to bottom, rgb(201, 208, 219) 0%, rgb(182, 187, 196) 35%, rgb(161, 165, 173) 50%, rgb(127, 130, 135) 100%);
+}
+#hal:after
+{
+    z-index: 2;
+
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+
+    background: -webkit-linear-gradient(top, rgb(40, 41, 43) 0%, rgb(62, 63, 66) 45%, rgb(91, 92, 96) 55%, rgb(193, 195, 204) 100%);
+    background:         linear-gradient(to bottom, rgb(40, 41, 43) 0%, rgb(62, 63, 66) 45%, rgb(91, 92, 96) 55%, rgb(193, 195, 204) 100%);
+}
+#eye
+{
+    position: absolute;
+    z-index: 3;
+    top: 5%;
+    left: 5%;
+
+    width: 90%;
+    height: 90%;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: rgb(0, 0, 0);
+}
+#eye:before
+{
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(255, 215, 215) 0%, rgb(255, 0, 0) 5%, rgb(150, 0, 0) 35%, rgb(0, 0, 0) 60%, rgb(0, 0, 0) 85%);
+    background:         radial-gradient(ellipse at center, rgb(255, 215, 215) 0%, rgb(255, 0, 0) 5%, rgb(150, 0, 0) 35%, rgb(0, 0, 0) 60%, rgb(0, 0, 0) 85%);
+}
+#eye:after
+{
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(255, 215, 215) 0%, rgb(255, 0, 0) 15%, rgb(150, 0, 0) 45%, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 95%);
+    background:         radial-gradient(ellipse at center, rgb(255, 215, 215) 0%, rgb(255, 0, 0) 15%, rgb(150, 0, 0) 45%, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 95%);
+}
+#eye:hover:after, #eye:focus:after
+{
+    -webkit-animation: flash 30s ease-in-out infinite alternate;
+            animation: flash 30s ease-in-out infinite alternate;
+}
+#reflection, #reflection:before, #reflection:after
+{
+    position: absolute;
+
+    border-radius: 100% 100% 0 0 / 35% 35% 0 0;
+    background: -webkit-radial-gradient(bottom, ellipse cover, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, .08) 21%);
+    background:         radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, .08) 21%);
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    background-size: 425% 100%;
+}
+#reflection:before, #reflection:after
+{
+    top: 80%;
+
+    display: block;
+
+    width: 80%;
+    height: 100%;
+
+    content: '';
+}
+#reflection
+{
+    z-index: 4;
+    top: 10%;
+    left: 38%;
+
+    width: 24%;
+    height: 15%;
+}
+#reflection:before
+{
+    z-index: 5;
+    right: 120%;
+
+    -webkit-transform: rotate(-50deg);
+        -ms-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+}
+#reflection:after
+{
+    z-index: 6;
+    left: 120%;
+
+    -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+            transform: rotate(50deg);
+}
+.video
+{
+    width: 600px;
+    height: 480px;
+    margin: 0 auto;
+}
+iframe
+{
+    width: 600px;
+    height: 480px;
+}
+figcaption
+{
+    text-align: center;
+}
+@media (max-width: 480px) {
+    #hal
+    {
+        width: 125px;
+        height: 125px;
+    }
+    iframe
+    {
+        width: 360px;
+        height: 240px;
+    }
+    .video
+    {
+        width: 360px;
+        height: 240px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 320px) {
+    iframe
+    {
+        width: 320px;
+        height: 240px;
+    }
+    .video
+    {
+        width: 320px;
+        height: 240px;
+        margin: 0 auto;
+    }
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    4% {
+        opacity: 1;
+    }
+    6% {
+        opacity: .5;
+    }
+    8%
+    {
+        opacity: 1;
+    }
+    9%
+    {
+        opacity: .3;
+    }
+    10%
+    {
+        opacity: .9;
+    }
+    10.5%
+    {
+        opacity: .6;
+    }
+    11.2%
+    {
+        opacity: 1;
+    }
+    11.5%
+    {
+        opacity: 0;
+    }
+    18%
+    {
+        opacity: .9;
+    }
+    25%
+    {
+        opacity: .2;
+    }
+    30%
+    {
+        opacity: 1;
+    }
+    32%
+    {
+        opacity: 0;
+    }
+    38%
+    {
+        opacity: .9;
+    }
+    40%
+    {
+        opacity: 0;
+    }
+    41%
+    {
+        opacity: 1;
+    }
+    41.25%
+    {
+        opacity: 0;
+    }
+    43%
+    {
+        opacity: .9;
+    }
+    46%
+    {
+        opacity: .2;
+    }
+    47%
+    {
+        opacity: 1;
+    }
+    49%
+    {
+        opacity: .8;
+    }
+    53.5%
+    {
+        opacity: 1;
+    }
+    55%
+    {
+        opacity: 0;
+    }
+    56%
+    {
+        opacity: .2;
+    }
+    56.3%
+    {
+        opacity: 1;
+    }
+    56.8%
+    {
+        opacity: .4;
+    }
+    57%
+    {
+        opacity: 1;
+    }
+    60%
+    {
+        opacity: 0;
+    }
+    65%
+    {
+        opacity: .8;
+    }
+    69%
+    {
+        opacity: 0;
+    }
+    73%
+    {
+        opacity: .7;
+    }
+    74.2%
+    {
+        opacity: 0;
+    }
+    74.8%
+    {
+        opacity: .4;
+    }
+    74.9%
+    {
+        opacity: .1;
+    }
+    75.2%
+    {
+        opacity: 1;
+    }
+    78%
+    {
+        opacity: 0;
+    }
+    80%
+    {
+        opacity: .6;
+    }
+    84%
+    {
+        opacity: .2;
+    }
+    85%
+    {
+        opacity: .8;
+    }
+    86%
+    {
+        opacity: 0;
+    }
+    87%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 0;
+    }
+    93%
+    {
+        opacity: .5;
+    }
+    95%
+    {
+        opacity: .2;
+    }
+    95.5%
+    {
+        opacity: 1;
+    }
+    97%
+    {
+        opacity: 0;
+    }
+    98%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+@keyframes flash
+{
+    0%
+    {
+        opacity: 0;
+    }
+    4%
+    {
+        opacity: 1;
+    }
+    6%
+    {
+        opacity: .5;
+    }
+    8%
+    {
+        opacity: 1;
+    }
+    9%
+    {
+        opacity: .3;
+    }
+    10%
+    {
+        opacity: .9;
+    }
+    10.5%
+    {
+        opacity: .6;
+    }
+    11.2%
+    {
+        opacity: 1;
+    }
+    11.5%
+    {
+        opacity: 0;
+    }
+    18%
+    {
+        opacity: .9;
+    }
+    25%
+    {
+        opacity: .2;
+    }
+    30%
+    {
+        opacity: 1;
+    }
+    32%
+    {
+        opacity: 0;
+    }
+    38%
+    {
+        opacity: .9;
+    }
+    40%
+    {
+        opacity: 0;
+    }
+    41%
+    {
+        opacity: 1;
+    }
+    41.25%
+    {
+        opacity: 0;
+    }
+    43%
+    {
+        opacity: .9;
+    }
+    46%
+    {
+        opacity: .2;
+    }
+    47%
+    {
+        opacity: 1;
+    }
+    49%
+    {
+        opacity: .8;
+    }
+    53.5%
+    {
+        opacity: 1;
+    }
+    55%
+    {
+        opacity: 0;
+    }
+    56%
+    {
+        opacity: .2;
+    }
+    56.3%
+    {
+        opacity: 1;
+    }
+    56.8%
+    {
+        opacity: .4;
+    }
+    57%
+    {
+        opacity: 1;
+    }
+    60%
+    {
+        opacity: 0;
+    }
+    65%
+    {
+        opacity: .8;
+    }
+    69%
+    {
+        opacity: 0;
+    }
+    73%
+    {
+        opacity: .7;
+    }
+    74.2%
+    {
+        opacity: 0;
+    }
+    74.8%
+    {
+        opacity: .4;
+    }
+    74.9%
+    {
+        opacity: .1;
+    }
+    75.2%
+    {
+        opacity: 1;
+    }
+    78%
+    {
+        opacity: 0;
+    }
+    80%
+    {
+        opacity: .6;
+    }
+    84%
+    {
+        opacity: .2;
+    }
+    85%
+    {
+        opacity: .8;
+    }
+    86%
+    {
+        opacity: 0;
+    }
+    87%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 0;
+    }
+    93%
+    {
+        opacity: .5;
+    }
+    95%
+    {
+        opacity: .2;
+    }
+    95.5%
+    {
+        opacity: 1;
+    }
+    97%
+    {
+        opacity: 0;
+    }
+    98%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
